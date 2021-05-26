@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Users/BIDA20-067/Desktop/ONICAH/layout.css">
+    <title>CPT || lidestyle</title>
+
+    <style>
+        figure a:hover{background: linear-gradient(to right, black 0%, yellow 100%);color:bisque;}
+        main #activities a:hover{background-color: aquamarine;color: black;}
+        main #events a:hover{background-color: aquamarine;color: black;}
+        main #conn a:hover{background-color: aquamarine;color: black;}
+        main img:hover{
+            opacity: 0.9;
+        }
+        
+        
+        @media screen and (max-width: 600px) {
+          nav a:not(:first-child) {display: none;}
+          nav a.icon {
+            float: right;
+            display: block;
+          }
+        }
+        
+        @media screen and (max-width: 600px) {
+          nav.responsive {position: relative;}
+          nav.responsive a.icon {
+            position: relative;
+          }
+          nav.responsive a {
+            float: none;
+            display:inline-block;
+            text-align: right;
+            color: wheat;
+            margin: 0px 2px 0px 4px;
+            padding: 20px 0px;
+          }
+          nav.responsive{
+            background: linear-gradient(to bottom, green 0%, black 100%);
+            transition: 2s;
+            transition-duration: 2s;
+            height: 120px;
+          }
+          body {
+              width:100%;
+              position: relative;
+          }
+          body img{
+              height: auto;
+              max-width: 400px;
+          }
+          #logo img{
+            width: 350px;
+            height: 100px;
+            border: 0px;
+            text-align: center;
+          }
+          main{
+            margin-top: 70px;
+          }
+        }
+        </style>
+
+        <style>
+            h3{
+            text-align: center;
+            text-transform: uppercase;
+            background: linear-gradient(to bottom, wheat 0%, beige 100%);
+            height: 30px;
+            margin: 10px 0;
+            padding: 10px 0 0 0;
+          }
+          h4{
+            text-align: center;
+            text-transform: uppercase;
+            height: 30px;
+            margin: 10px 0;
+            padding: 10px 0 0 0;
+          }
+          img{
+            height: 400px;width: 400px;
+          }
+        </style>
+
+</head>
+
+<body>
+        <header>
+            <div id="logo">
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/index.html"><img src="/Users/BIDA20-067/Desktop/ONICAH/images/logo.png" alt=""></a>
+            </div>
+            <nav id="Mynav">
+                <a href="/Users/bida20-067/Desktop/ONICAH/index.html">home</a>
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/about.html">About</a>
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/lifestyle.html">Lifestyle</a>
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/events.html">Events</a>
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/connect.html">Connect</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" style="border:black px solid;"></i>
+                </a>
+            </nav>
+    
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("Mynav");
+                    if (x.className === "nav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "nav";
+                    }
+                }
+            </script>
+           </header>
+           <main>
+             <h3>
+               TOURIST ATTRACTION
+             </h3>
+
+              <h4>Table mountain’s</h4>
+
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/d1.jfif" alt="table mountains">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/d2.jfif" alt="table mountains">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/d3.jfif" alt="table mountains">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/d4.jfif" alt="table mountains">
+
+              <h4>Wine tasting in the Cape Winelands</h4>
+
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/wine 1.jpg" alt="winelands">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/wine 2.jfif" alt="Winelands">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/wine.jfif" alt="winelands">
+
+              <h4>12 Apostles Hotel & Spa in Cape Town</h4>
+
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/hotel 1.jpg" alt="hotel Apostles in capetown">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/hotel 2.jpg" alt="hotel Apostles in capetown">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/hotel 3.jpg" alt="hotel Apostles in capetown">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/hotel 4.jpg" alt="hotel Apostles in capetown">
+
+              <h4>Cape Town's ocean views</h4>
+
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/e1.jfif" alt="ocean views">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/e2.jfif" alt="ocean views">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/e3.jfif" alt="ocean views">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/e4.jfif" alt="ocean views">
+              <img src="/Users/BIDA20-067/Desktop/ONICAH/images/e5.jfif" alt="ocean views">
+
+           </main>
+
+    <footer>
+        <footer id="quicklinks">
+            <h4>EXPLORE</h4>
+            <div id="ryt">
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/about.html">home</a><br>
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/lifestyle.html">about</a><br>
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/events.html">Events</a><br>
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/connect.html">Connect</a><br>
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/lifestyle.html">Gallerry</a><br>
+                <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/lifestyle.html">Videos</a>
+            </div>
+            <div id="lft">
+                <a href="./PAGES/events.html">CULTURE DAY</a><br>
+                <a href="./PAGES/events.html">INDEPENDENCE</a><br>
+                <a href="./PAGES/events.html">MUSIC FESTIVALs</a><br>
+            </div>
+            
+ 
+        </footer>
+
+        <footer id="shortlinks">
+            <h4>CONTACTS</h4>
+            <div id="ryt">
+            <a href="#"> <i class="fa fa-phone"></i>+27 3563738939</a><br>
+            <a href="#"> <i class="fa fa-phone"></i>+27 3563738940</a><br>
+            <a href="#"> <i class="fa fa-phone"></i>+27 3563738939</a><br>
+            <a href="#"> <i class="fa fa-phone"></i>+27 3563738940</a><br>
+            <a href="/Users/BIDA20-067/Desktop/ONICAH/PAGES/connect.html"><i class="fa fa-envelope"></i>info@cpt.marketing.com</a>
+            </div>
+            <div id="lft">
+                <a href="#"><i class="fa fa-facebook"></i>acebook</a><br>
+            <a href="#"><i class="fa fa-twitter"></i>twitter</a><br>
+            <a href="#"><i class="fa fa-instagram"></i>instagram</a><br>
+            <a href="#"><i class="fa fa-pinterest"></i>pinterest</a><br>
+            </div>
+            
+        </footer>
+    </footer>
+     website by <a href="#" style="text-decoration: none;">ONICAH</a>
+</body>
+</html>
