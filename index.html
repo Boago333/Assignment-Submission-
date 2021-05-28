@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./layout.css">
+    <title>CPT || home</title>
+
+    <style>
+        figure a:hover{background: linear-gradient(to right, black 0%, yellow 100%);color:bisque;}
+        main #activities a:hover{background-color: aquamarine;color: black;}
+        main #events a:hover{background-color: aquamarine;color: black;}
+        main #conn a:hover{background-color: aquamarine;color: black;}
+        main img:hover{
+            opacity: 0.9;
+        }
+        
+        
+        @media screen and (max-width: 600px) {
+          nav a:not(:first-child) {display: none;}
+          nav a.icon {
+            float: right;
+            display: block;
+          }
+        }
+        
+        @media screen and (max-width: 600px) {
+          nav.responsive {position: relative;}
+          nav.responsive a.icon {
+            position: relative;
+          }
+          nav.responsive a {
+            float: none;
+            display:inline-block;
+            text-align: right;
+            color: wheat;
+            margin: 0px 2px 0px 4px;
+            padding: 20px 0px;
+          }
+          nav.responsive{
+            background: linear-gradient(to bottom, green 0%, black 100%);
+            transition: 2s;
+            transition-duration: 2s;
+          }
+          body {
+              width:100%;
+              position: relative;
+          }
+          body img{
+              height: auto;
+              width: 600px;
+          }
+          #logo img{
+            width: 350px;
+            height: 100px;
+            border: 0px;
+            text-align: center;
+          }
+          figure{
+             width: 400px;
+             margin-top: 0px;
+             display: none;
+          }
+          figure h1{
+              margin: 30px 60px 0 0;
+              padding: 0;
+              font-size: 18px;
+              float: right;
+          }
+          figure a{
+              top: 25%;
+              left: 40%;
+              transform: translate(-20%, -20%);
+              position: absolute;
+              margin: 0;
+              border: 0;
+              color: bisque;
+          }
+          header{
+              height: 50px;
+              width: 100%;
+          }
+        
+          header nav{
+              width: 100%;
+              padding: 40px 0;
+              text-align:none;
+              
+          }
+          header nav a{
+            margin: 0;
+            margin-left: 20px;
+            padding: 0;
+          }
+          #beaches img{
+              width: 400px;
+          }
+          #history{
+              height: 300px;
+          }
+          #activities{
+              border: 0;
+          }
+          #activities a{
+              border:0;
+              text-decoration:underline;
+          }
+          #activities h4{
+              margin: 10px;
+          }
+          #events a{
+              border: 0;
+              text-decoration: underline;
+          }
+          #events h4{
+              margin: 10px;
+          }
+          main{
+              height: auto;
+          }
+          main h3{
+              margin: 20px;
+          }
+          footer{
+              height: 250px;
+          }
+          footer #ryt {
+              padding: 0;
+              float: none;
+              font-size: 16px;
+              text-transform: capitalize;
+          }
+          footer #lft {
+              padding: 0;
+              float: none;
+              font-size: 16px;
+              text-transform: capitalize;
+          }
+          #lft a{
+              text-transform: capitalize;
+          }
+          #ryt a{
+              text-transform: capitalize;
+          }
+          #vid{
+              height: 400px;
+              width: 400px;
+              text-align: center;
+              margin: 40px 0 0 0;
+              border: 2px solid black;
+          }
+          #gg{
+              margin-top: 60px;
+          }
+          #ee{
+              margin-top: 80px;
+          }
+        }
+        </style>
+
+        <style>
+            figure{
+                margin: 0;
+                padding: 0;
+                height: 400px;
+                width: 1250px;
+            }
+            figure img{
+                height: 400px;
+                width: 100%;
+            }
+            .top-right{
+                position: absolute;
+                top: 58px;
+                right: 90px;
+                color: black;
+                font-size: 30px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                background-color: transparent;
+                opacity: 0.8;
+            }
+            .centered{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            figure a{
+                margin: 300px 0 0 960px;
+                font-size: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: bisque;
+                text-decoration: none;
+                text-transform: capitalize;
+                border: 1px solid cyan;
+                background: linear-gradient(to bottom, black 0%, yellow 100%);
+                border-radius: 0.3em;
+            }
+
+            main{
+                height: auto;
+                width: 100%;
+                margin: 0px;
+            }
+
+            main h3{
+                text-align: center;
+            }
+
+            #history{
+                color: black;
+                height: 200px;
+                border-bottom: 0.1px solid yellow;
+            }
+
+            #history h4{
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            #history p{
+                color: rgb(56, 3, 3);
+            }
+
+            #activities{
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 60px;
+            }
+
+            #activities a{
+                text-transform: uppercase;
+                text-decoration: none;
+                border: 3px solid black;
+                margin-left: 50px;
+                padding: 20px 10px 20px 10px;
+                font-size: 30px;
+                color: darkcyan;
+                margin-bottom: 30px;
+                transition-property: all;
+                transition: 1s;
+                transition-duration: 2s;
+            }
+
+            #activities h4{
+                text-transform: uppercase;
+                margin-bottom: 50px;
+                margin-top: 50px;
+            }
+
+            #events{
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 60px;
+            }
+
+            #events a{
+                text-transform: uppercase;
+                text-decoration: none;
+                border: 3px solid black;
+                margin-left: 50px;
+                padding: 20px 10px 20px 10px;
+                font-size: 30px;
+                color: darkcyan;
+                margin-bottom: 30px;
+                transition-property: all;
+                transition: 1s;
+                transition-duration: 2s;
+            }
+
+            #events h4{
+                text-transform: uppercase;
+                margin-bottom: 50px;
+                margin-top: 50px;
+            }
+
+            #conn{
+                text-align: center;
+                margin-top: 60px;
+            }
+            #conn a{
+                color: black;
+                padding: 30px;
+                text-decoration: none;
+                border: 2px solid black;
+                transition-property: all;
+                transition: 1s;
+                transition-duration: 2s;
+            }
+
+            #vid{
+                margin-top: 60px;
+                text-align: center;
+                height: 400px;
+                width: 100%;
+            }
+
+            #vid video{
+                height: 397px;
+                width: 100%;
+                text-align: center;
+                border: 3px solid greenyellow;
+            }
+
+        </style>
+</head>
+
+<body>
+        <header>
+            <div id="logo">
+                <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+            </div>
+            <nav id="Mynav">
+                <a href="./index.html">home</a>
+                <a href="./about.html">About</a>
+                <a href="./lifestyle.html">Lifestyle</a>
+                <a href="./events.html">Events</a>
+                <a href="./connect.html">Connect</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" style="border:black px solid;"></i>
+                </a>
+            </nav>
+    
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("Mynav");
+                    if (x.className === "nav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "nav";
+                    }
+                }
+            </script>
+           </header>
+            <figure>
+                <img src="./images/Cape-Town.gif" alt="">
+                <div class="top-right"><h1>WELCOME TO CPT</h1></div>
+                <div class="centered"><a href="./lifestyle.html">EXPLORE</a></div>
+                
+                
+            </figure> 
+
+        <main>
+             
+        <h3 id="gg">2020 SUMMER BEACH IN CPT</h3>
+        <p>
+            You know the score by now: Camps Bay is the premier beach in Cape Town. Alongside the Clifton coast and the secret coves of Bakoven, this iconic stretch of sand is one of the main reasons visitors come to the Mother City: It’s a postcard-perfect vision of a tourist haven – with city attractions and rows of bars and restaurants right on the doorstep
+        </p>
+        <div id="beaches">
+            <a href="#"><img src="./images/1.jpg" alt=""></a>
+            <a href="#"><img src="./images/2.jpg" alt=""></a>
+            <section id="activities">
+                <a href="./lifestyle.html">See more</a>
+                
+    
+            </section>
+
+        </div>
+
+        <section id="history">
+            <h4>HISTORY</h4>
+            <p>
+                Cape Town is a port city on South Africa’s southwest coast, on a peninsula beneath the imposing Table Mountain. Slowly rotating cable cars climb to the mountain’s flat top, from which there are sweeping views of the city, the busy harbor and boats heading for Robben Island, the notorious prison that once held Nelson Mandela, which is now a living museum
+            </p>
+            <p>
+                The city is known for its harbour, for its natural setting in the Cape Floristic Region, and for landmarks such as Table Mountain and Cape Point. Cape Town is home to 49% of the Western Cape's population. Read more <a href="/Users/BIDA19-044/Desktop/ONICAH/PAGES/about.html">here</a>
+            </p><br>
+        </section>
+        <h3 id="ee">TOURISM and HOSPITALITY IN CPT</h3>
+        <div id="beaches">
+            <a href="#"><img src="./images/3.jfif" alt=""></a>
+            <a href="#"><img src="./images/4.jfif" alt=""></a>
+        </div>
+
+        <section id="activities">
+            <a href="./lifestyle.html">Lifestyle</a>
+            
+
+        </section>
+
+        <section id="defs">
+                <p>Cape Town - A new hotel, the Cresta Grande, opened its doors on Thursday, bucking a trend that has seen a number of businesses in the hospitality trade close as a result of the Covid-19 pandemic.</p>
+                <p>Cresta Hotels group executive, Chipo Mandela, said the hotel, which has taken up the building that until recently housed the Holiday Inn on the corner of Loop and Strand streets, was aimed at leisure and business travellers in the four-star market.</p>
+                <p>Cape Town Tourism has said it is feeling cautiously optimistic as a number hotels open in the Mother City and new hotel groups arrive. The organisation’s trade and partnership manager, Carel Stadler, said: “We applaud Cresta Hotels for taking such a bold step at a time that is so difficult for the hospitality industry.”</p>
+           
+        </section>
+
+            <h3>RECREATION MOMENTS IN CPT</h3>
+        <div id="beaches">
+            <a href="#"><img src="./images/5.jpg" alt=""></a>
+            <a href="#"><img src="./images/6.jfif" alt=""></a>
+        </div>
+
+        <section id="events">
+            <h4>UP COMING EVENTS</h4>
+
+            <a href="./events.html">Up coming Events</a>
+          
+            
+        </section>
+
+        <h3>NATURE IN CPT</h3>
+        <div id="beaches">
+            <a href="#"><img src="./images/7.jpg" alt=""></a>
+            <a href="#"><img src="./images/8.jpg" alt=""></a>
+        </div>
+
+        <div id="conn">
+            <a href="#">WATCH THIS VIDEO</a>
+        </div>
+
+        <div id="vid">
+            <video controls src="/Users/BIDA19-044/Videos/OLD SCHOOL/battlefield_jordin_sparks_lyrics_h264_64263.mp4"></video>
+        </div>
+
+        <div id="conn">
+            <a href="#"> CONNECT NOW</a>
+        </div>
+       
+    </main>
+    <footer>
+        <footer id="quicklinks">
+            <h4>EXPLORE</h4>
+            <div id="ryt">
+                <a href="./about.html">About</a><br>
+                <a href="./lifestyle.html">Lifestyle</a><br>
+                <a href="./events.html">Events</a><br>
+                <a href="./connect.html">Connect</a><br>
+                <a href="#">Gallerry</a><br>
+                <a href="Video">Videos</a>
+            </div>
+            <div id="lft">
+                <a href="./events.html">CULTURE DAY</a><br>
+                <a href="./events.html">INDEPENDENCE</a><br>
+                <a href="./events.html">MUSIC FESTIVALs</a><br>
+            </div>
+            
+ 
+        </footer>
+
+        <footer id="shortlinks">
+            <h4>CONTACTS</h4>
+            <div id="ryt">
+            <a href="#"> <i class="fa fa-phone"></i>+27 3563738939</a><br>
+            <a href="#"> <i class="fa fa-phone"></i>+27 3563738940</a><br>
+            <a href="#"> <i class="fa fa-phone"></i>+27 3563738939</a><br>
+            <a href="#"> <i class="fa fa-phone"></i>+27 3563738940</a><br>
+            <a href="./connect.html"><i class="fa fa-envelope"></i>info@cpt.marketing.com</a>
+            </div>
+            <div id="lft">
+                <a href="#"><i class="fa fa-facebook"></i>acebook</a><br>
+            <a href="#"><i class="fa fa-twitter"></i>twitter</a><br>
+            <a href="#"><i class="fa fa-instagram"></i>instagram</a><br>
+            <a href="#"><i class="fa fa-pinterest"></i>pinterest</a><br>
+            </div>
+            
+        </footer>
+    </footer>
+     website by <a href="#" style="text-decoration: none;">ONICAH</a>
+</body>
+</html>
